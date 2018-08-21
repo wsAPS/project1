@@ -1,6 +1,10 @@
 
+### made by APS
 
+### do not copy
 
+### plese just enjoy it  
+	
 import subprocess,sys
 import os,platform
 import string
@@ -86,7 +90,7 @@ def msf_handler():
 	print('\n')
 	lh = raw_input(bcolors.ENDC+"[>] Plese insert lhost : "+bcolors.OCRA+bcolors.BOLD)
 	print('\n')
-	por = raw_input(bcolors.ENDC+"[>] Plese insert port : "+bcolors.OCRA+bcolors.BOL)
+	por = raw_input(bcolors.ENDC+"[>] Plese insert port : "+bcolors.OCRA+bcolors.BOLD)
 	rcs = rcn+'.rc'
 	fw = open(rcs,'w')
 	fw.write('use exploit/multi/handler\n\n')
