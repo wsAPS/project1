@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 
-
 import os
 import sys
 import platform
@@ -10,7 +9,6 @@ from time import sleep
 sys.path.insert(0,"Setup")
 import APS2_lib
 sys.dont_write_bytecode = True
-
 
 
 class bcolors:
@@ -57,7 +55,7 @@ def main_starting():
 			sleep(0.10)
 		elif ans == "9":
 			print(bcolors.RED + bcolors.BOLD+"Plese waiting for open website.....")
-			cmd0=os.system("firefox https://www.aps.com")
+			cmd0=os.system("firefox aps.or.kr")
 			sleep(0.10)
 		elif ans == "0":
 			APS2_lib.clear()
