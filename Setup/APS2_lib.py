@@ -55,7 +55,7 @@ def menu():
 	print(35*' '+bcolors.OCRA+bcolors.BOLD+"MAIN MENU"+bcolors.ENDC)
 	print(10*' '+"+==========================================================+") 
 	print(10*' '+"|                            \                             |")               
- 	print(10*' '+"|    ["+bcolors.OCRA+"1"+bcolors.ENDC+"] APSAPS              /    ["+bcolors.OCRA+"2"+bcolors.ENDC+"] APSAPS               |")
+ 	print(10*' '+"|    ["+bcolors.OCRA+"1"+bcolors.ENDC+"] keylogger           /    ["+bcolors.OCRA+"2"+bcolors.ENDC+"] APSAPS               |")
  	print(10*' '+"|                            \                             |")
  	print(10*' '+"|    ["+bcolors.OCRA+"3"+bcolors.ENDC+"] APSAPS              /    ["+bcolors.OCRA+"4"+bcolors.ENDC+"] APSAPS               |")
 	print(10*' '+"|                            \                             |")  
@@ -101,6 +101,17 @@ def msf_handler():
 	fw.write('exploit -j')	
 	fw.close()	
 	cmd0 = os.system('msfconsole -r '+rcs)
+
+def Keylogger():
+	print(bcolors.RED+bcolors.BOLD+"Keylogger os chooese\n\n"+bcolors.ENDC)
+	print("[1] Windows..\n\n")
+	print("[2] Linux..\n\n")
+	col = raw_input("[>] Plese Insert Number : "+bcolors.OCRA+bcolors.BOLD)
+	if col == "1":
+		print("Not yet")
+	elif col == "2":
+		fw = open("pykeylog.py",'w')
+		
 
 
 
