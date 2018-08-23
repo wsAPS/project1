@@ -27,10 +27,10 @@ def main_starting():
 		APS2_lib.banner()
 		APS2_lib.python_version_cheker()
 		APS2_lib.menu()
-		ans = raw_input("\n[>] Please insert choice\'s number: "+bcolors.OCRA+bcolors.BOLD)
+		ans = raw_input("\n[>] Please insert choice number: "+bcolors.OCRA+bcolors.BOLD)
 		print(bcolors.ENDC+'\n')
 		if ans == "1":
-			print("No make this menu")
+			APS2_lib.Keylogger()
 			sleep(0.10)
 		elif ans == "2":
 			print("Plese wait update")
